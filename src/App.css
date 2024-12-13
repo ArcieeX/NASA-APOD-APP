@@ -1,0 +1,113 @@
+#root {
+  max-width: 1200px;
+  text-align: center;
+}
+.nasa-photo-of-the-day {
+  text-align: center;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  
+  border-color: #646cff;
+}
+button:hover {
+  border-color: pink;
+}
+h1{
+  text-align: center;
+}
+body {
+  text-align: center;
+  background-color: black; 
+}
+#App{
+  text-align: center;
+}
+img {
+  max-width: 100%; 
+}
+.photo-image {
+  width: 90%; 
+  max-width: 100%;
+  /* border-radius: 10%; */
+}
+
+.apod-gallery {
+  text-align: center;
+  margin: 2rem;
+}
+.photos-grid{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5fr;
+  justify-content: space-between;
+  
+}
+.photo-item {
+  justify-content: space-between;
+  
+}
+
+@media (min-width: 300px) {
+  .photos-grid {
+    gap: 2fr;
+    text-align: center;
+    margin: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .photos-grid {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 2rem;
+    gap: 1fr;
+  }
+  .photo-item{
+    gap: 1fr;
+    justify-content: space-between;
+    
+    margin: 10px;
+    border: 2px solid pink;
+  }
+}
+@media (min-width: 1000px) {
+  .nasa-photo-of-the-day {
+    text-align: center;
+    justify-self: center;
+    align-content: center;
+  }
+  .photos-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 2rem;
+    gap: 1fr;
+    font-size: 13px;
+  }
+  .photo-item{
+    gap: 1fr;
+    justify-content: space-between;
+    
+    margin: 10px;
+    border: 2px solid pink;
+  }
+  .photo-item p {
+    margin: 40px;
+  }
+  .photo-image{
+    /* gap: 1fr; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    /* margin: 20px; */
+    border: 2px solid pink;
+  }
+}
